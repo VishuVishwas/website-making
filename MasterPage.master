@@ -1,0 +1,263 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/iphone2.png" />
+    <title>Main Mumbai - StarLine</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Syed Danial Munsif" />
+    <meta name="keywords" content="mobile apps, promo apps, Responsive html5 template" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <script src="css/e65fc10c49.js"></script>
+    <!-- Remove style switcher css -->
+    <style>
+        .palette-wrapper {
+            background-color: #fff;
+            border: 2px solid #39b54a;
+            border-left: 0px;
+            left: 0px;
+            padding: 15px;
+            position: fixed;
+            top: 200px;
+            -webkit-transition: margin 0.2s linear;
+            -moz-transition: margin 0.2s linear;
+            -o-transition: margin 0.2s linear;
+            transition: margin 0.2s linear;
+            width: 180px;
+            z-index: 999999;
+        }
+
+            .palette-wrapper select {
+                display: block;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+
+        .palette-closed {
+            margin-left: -180px;
+        }
+
+        h2.palette-title,
+        .block-content h3.palette-title {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0px 0px 10px 0px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .palette-colors {
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .palette-colors li {
+                display: block;
+                float: left;
+                list-style: none;
+                margin-bottom: 11px;
+                margin-right: 11px;
+            }
+
+                .palette-colors li:nth-child(4n) {
+                    margin-right: 0px;
+                }
+
+            .palette-colors a {
+                background-color: red;
+                display: block;
+                height: 24px;
+                margin: 1px;
+                width: 24px;
+            }
+
+        .palette-toggle {
+            background-color: black;
+            border: 2px solid black;
+            border-left: 0px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1;
+            position: absolute;
+            right: -42px;
+            text-align: center;
+            text-transform: uppercase;
+            top: -2px;
+            width: 40px;
+        }
+
+            .palette-toggle .palette-toggle-inner {
+                border: 1px solid #fff;
+                height: 100px;
+                padding: 66px 0px 0px 0px;
+            }
+
+            .palette-toggle span {
+                display: block;
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+                white-space: nowrap;
+            }
+
+            .palette-toggle i {
+                display: inline;
+                margin-right: 8px;
+            }
+
+        .palette-color-green a {
+            background-color: #07cb79;
+        }
+
+        .palette-color-red a {
+            background-color: #e83b35;
+        }
+
+        .palette-color-cyan a {
+            background-color: #07aaf5;
+        }
+
+        .palette-color-purple a {
+            background-color: #8e45ae;
+        }
+
+        .palette-color-gradient a {
+            background-image: linear-gradient(to right, rgb(255, 195, 113) 0%, rgb(255, 95, 109) 100%);
+        }
+
+        .PBtn {
+            float: right !important;
+        }
+
+        @media only screen and (max-width:480px) {
+            .navbar-default a::before {
+                top: 0.5px !important;
+            }
+        }
+
+        @media only screen and (max-width:360px) {
+            .PBtn {
+                float: none !important;
+            }
+
+            #pricing-tables .pricing a, .social-networks li {
+                display: flow-root!important;
+            }
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="home">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="script" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+        <%-- <!-- color options -->
+        <div class="palette-wrapper palette-closed">
+            <div class="palette-inner">
+                <div class="palette-toggle">
+                    <div class="palette-toggle-inner">
+                        <span><i class="fa fa-cog fa-spin"></i>Options</span>
+                    </div>
+                </div>
+                <h2 class="palette-title">Color Variant</h2>
+                <ul class="palette-colors clearfix">
+                    <li class="palette-color-red"><a href="css/red.min.css"></a></li>
+                    <li class="palette-color-purple"><a href="css/purple.min.css"></a></li>
+                    <li class="palette-color-cyan"><a href="css/cyan.min.css"></a></li>
+                    <li class="palette-color-green"><a href="css/green.min.css"></a></li>
+
+                    <li class="palette-title" style="display: block; font-weight: bold; width: 100%;">Gradient</li>
+                    <li class="palette-color-gradient"><a href="css/gradient.min.css"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- color options end -->--%>
+        <%--<!-- preloader -->
+        <div id="preloader">
+            <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+        </div>
+        <!-- preloader end -->--%>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Default.aspx">Main Mumbai StarLine
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#home">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                    <li><a href="#about-sec" data-hover="About">About</a></li>
+                    <%--<li><a href="#aww_features" data-hover="Features">Features</a></li>--%>
+                    <li><a href="#screenshots" data-hover="Screenshots">Screenshots</a></li>
+                    <li><a href="#services" data-hover="Results">Results</a></li>
+                    <li><a href="#downloads" data-hover="Download">Download</a></li>
+                    <li><a href="#contact" data-hover="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navigation end -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div class="container" id="social-icons">
+        <div class="row text-center">
+            <ul class="social-networks spin-icon">
+                <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
+                <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
+                <li><a href="https://pinterest.com/" class="icon-pinterest">Pinterest</a></li>
+                <li><a href="https://instagram.com/" class="icon-instagram">Instagram</a></li>
+            </ul>
+            <p class="margin-b-0">Copyright @ 2017 M Mumbai. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <!-- Remove color switcher -->
+    <script>
+        $(document).ready(function () {
+            $('.palette-colors a').click(function (e) {
+                e.preventDefault();
+                var newCSSHref = $(this).attr('href');
+                $('#css-main').attr('href', newCSSHref);
+            });
+            // close the palette on click
+            $('.palette-toggle').click(function () {
+                $('.palette-wrapper').toggleClass('palette-closed');
+            });
+        });
+    </script>
+
+</body>
+</html>
